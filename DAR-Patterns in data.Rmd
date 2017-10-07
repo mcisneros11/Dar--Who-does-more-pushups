@@ -56,15 +56,26 @@ histogram(~pushups|position,data=pushups,
           main="Most Pushups, by Position",
           xlab="Number of Pushups")
 ```
+
 In the Side-by-Side Histogram above, we divided the graph into two parts, one for Skill and one for Line. The side labeled "Count" represents the number of players in each position. The numbers labeled "Number of Pushups", represents the amount of pushups each player was able to do. Our numbers are exceeding by twenty. 
 
 ## Numerical Results
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
-
+```{r echo=FALSE}
+favstats(pushups~position,data=pushups)
+```
+We noticed in the two-way table above that the skill players maximum amount of pushups was 108, while the line players had a maximum of 34. As a result the mean of skilled players was 49.72 which resulted in skilled players doing more pushups. 
 
 # Inferential Results
 <!--State hypothesis clearly.  Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc.  Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisfys the assumptions and is appropriate to answer the research question!-->
+```{r echo=FALSE}
+t.test(pushups~position,data=pushups)
+```
+In the T-Test above we found a significant difference between the means of the skill and line players. The mean came up as 49.72 for skill players, and 17.12 for the line players. 
 
+$H_0$: There is no relationship between the postion and pushups in the pushups data
+
+$H_a$: There IS a relationship between position and pushups in the pushups data.
 
 # Discussion and Conclusion
 <!--State your overall conclusion.  This is also a good place to mention other Research Questions that came to mind as you were carrying out this study.!-->
