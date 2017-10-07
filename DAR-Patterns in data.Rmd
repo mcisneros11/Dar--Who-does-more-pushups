@@ -37,7 +37,7 @@ Our Research Question is:
 The two variables involved are:
 
 * **position**, which is a factor variable
-* **pushups**, which is also a factor variable
+* **pushups**, which is also a numerical variable
 In this study we will determine how a player's **position** affects the amount of **pushups** a player is able to do. 
 
 For this experiment we will be determining the results by using a T-test. The T-test will determine whether the means of two groups are equal to each other. The assumption for the test is that both groups are sampled from normal distributions with equal variances.
@@ -49,6 +49,14 @@ For this experiment we will be determining the results by using a T-test. The T-
 ## Graphical Results
 <!--Your graph should have a good title, and axes should be labled as needed.  Discuss your graphical results, showing how they answer the research question.  Use specific features of the graph in your discussion.!-->
 
+We are able to view the **pushups** by **position** graphically by using a Side-by-Side Histogram:
+```{r echo=FALSE}
+histogram(~pushups|position,data=pushups,
+          type="count",
+          main="Most Pushups, by Position",
+          xlab="Number of Pushups")
+```
+In the Side-by-Side Histogram above, we divided the graph into two parts, one for Skill and one for Line. The side labeled "Count" represents the number of players in each position. The numbers labeled "Number of Pushups", represents the amount of pushups each player was able to do. Our numbers are exceeding by twenty. 
 
 ## Numerical Results
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
