@@ -44,7 +44,7 @@ For this experiment we will be determining the results by using a T-test. The T-
 
 # Results
 <!--You have both graphical and numerical methods, so you will have both graphical and numerical results to consider.!-->
-
+We found that skill players did more pushups than line players. For the graphical results we ran a Side-by-Side Histogram, which told us the number of pushups each player completed by dividing them into two parts, Line and Skill. We found that Skill players had the most amount of pushups and the most players. For the numerical graph we ran a Two-way table that determined the mean, max, and median.  
 
 ## Graphical Results
 <!--Your graph should have a good title, and axes should be labled as needed.  Discuss your graphical results, showing how they answer the research question.  Use specific features of the graph in your discussion.!-->
